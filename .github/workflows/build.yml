@@ -27,7 +27,7 @@ jobs:
           EOF
 
       - name: Run docker compose
-        run: docker-compose up -d --build
+        run: docker compose up -d --build
 
       - name: Wait building
         run: sleep 20
