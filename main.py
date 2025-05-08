@@ -2,8 +2,6 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import Dict
 
-kjahsakjhsa
-
 app = FastAPI()
 
 class Item(BaseModel):
