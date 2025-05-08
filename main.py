@@ -11,6 +11,11 @@ class Item(BaseModel):
 db: Dict[int, Item] = {}
 id_counter = 1
 
+@app.get("/items/")
+def list_items():
+    return db
+
+
 @app.post("/items/")
 def create_item(item: Item):
     global id_counter
